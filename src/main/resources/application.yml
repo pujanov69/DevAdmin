@@ -1,0 +1,18 @@
+############## Server port configuration ################   
+server:
+  port: 8080
+
+
+############## File Uploading Directory #################
+
+database:
+  username: root
+  password: root
+
+
+logging:
+  loggin:
+    level:
+      root: ERROR
+  file: /devadmin/techtask/logs/devadmin.log  
+  

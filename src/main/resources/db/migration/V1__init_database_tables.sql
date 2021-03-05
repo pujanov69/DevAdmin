@@ -1,0 +1,10 @@
+
+CREATE TABLE IF NOT EXISTS `city` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(100) NOT NULL,
+	`country_code` VARCHAR(15) NOT NULL,
+	`district` VARCHAR(15) NOT NULL,
+	`population` INT(11) NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
