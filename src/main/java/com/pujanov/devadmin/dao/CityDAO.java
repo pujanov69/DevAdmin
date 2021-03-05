@@ -29,4 +29,7 @@ public interface CityDAO {
 	@SqlUpdate("UPDATE city SET name = :name , country_code = :countryCode, district = :district , population = :population WHERE id = :cityId")
 	public void updateCity(@Bind("cityId") int id, @BindBean CityDTO cityDTO);
 	
+	@SqlUpdate("DELETE FROM city WHERE id = :cityId")
+	public void deleteCityById(@Bind("cityId") int id);
+	
 }

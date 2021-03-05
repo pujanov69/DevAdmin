@@ -57,6 +57,7 @@ public class CityServiceImpl implements CityService{
 	public void deleteCity(int id) {
 		// TODO Auto-generated method stub
 		CityDAO cityDao = dbService.getDao(CityDAO.class);
+		cityDao.deleteCityById(id);
 		
 	}
 
